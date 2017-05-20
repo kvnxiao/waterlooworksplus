@@ -1,0 +1,32 @@
+{
+  "name": "waterlooworksplus",
+  "version": "1.2.0",
+  "description": "Quality of life improvements to the WaterlooWorks website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnxiao/waterlooworksplus.git"
+  },
+  "keywords": [
+    "waterlooworks",
+    "uwaterloo",
+    "job",
+    "co-op",
+    "browser",
+    "extension"
+  ],
+  "author": "Kevin Xiao",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kvnxiao/waterlooworksplus/issues"
+  },
+  "homepage": "https://github.com/kvnxiao/waterlooworksplus#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

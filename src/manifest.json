@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "WaterlooWorksPlus",
+  "description": "The extension for WaterlooWorks you never realized you needed.",
+  "version": "1.2.0",
+  "author": "Kevin Xiao",
+  "icons": {
+    "16": "img/128.png",
+    "48": "img/128.png",
+    "128": "img/128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://waterlooworks.uwaterloo.ca/**"],
+      "js": ["lib/jquery-3.2.1.min.js", "lib/orbisapp.js", "js/content.js"],
+      "css": ["css/custom.css"]
+    }
+  ],
+  "web_accessible_resources": ["js/injected.js"],
+  "permissions": [
+    "activeTab",
+    "https://waterlooworks.uwaterloo.ca/**"
+  ]
+}

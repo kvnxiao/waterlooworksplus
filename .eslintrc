@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb-base/legacy",
+  "rules": {
+    "no-console": "off",
+    "vars-on-top": "off",
+    "func-names": ["error", "never"],
+    "no-eval": "off"
+  },
+  "globals": {
+    "$": true,
+    "chrome": true,
+    "browser": true
+  }
+}

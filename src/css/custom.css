@@ -1,0 +1,128 @@
+.orbisModuleHeader .pager {
+  text-align: left !important;
+  margin-top: 10px !important;
+}
+
+.scroll-top {
+  width: 100%;
+  text-align: center;
+}
+
+.scroll-top > a {
+  font-size: 14px;
+}
+
+#postingsTableDiv {
+  margin-bottom: 10px;
+}
+
+.orbisFooter {
+  margin: 0 !important;
+  height: 50px !important;
+  line-height: 25px;
+  background: #1F2D3D !important;
+}
+
+@media (max-width: 767px) {
+  .sidebar-nav .nav-list {
+    background: #324057 !important;
+  }
+}
+
+.sidebar-nav .nav-list {
+  background: #324057 !important;
+}
+
+@media (max-width: 979px) {
+  .nav-collapse.in.collapse {
+    background: #324057 !important;
+  }
+}
+
+.sidebar-nav .nav-list > .active > a {
+  background: #6b7b92 !important;
+  border-radius: 4px;
+}
+
+@media (min-width: 980px) {
+  .nbs--fixed-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .bs--hide__column {
+    position: fixed !important;
+    background: #324057 !important;
+  }
+}
+
+@media (min-width: 980px) {
+  .sidebar-nav .nav-list>li>a:hover, .sidebar-nav .nav-list>li>a:focus {
+    background: #6b7b92 !important;
+  }
+}
+
+.sidebar-nav .nav-list>li>a:focus {
+    background: #6b7b92 !important;
+    border-radius: 4px;
+}
+
+.sidebar-nav .nav-list>li>a:hover {
+    background: #6b7b92 !important;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 980px) {
+  .span2.bs--hide__column:before {
+    border-right: 2px solid #475669 !important;
+  }
+
+  #mainContentDiv {
+    margin-left: 14.893617021276595% !important;
+    width: 85.4% !important;
+  }
+}
+
+#postingsTable {
+  white-space: normal !important;
+  table-layout: fixed;
+}
+
+.nav--branding.is--hidden.sticky a.brand {
+  height: auto !important;
+  opacity: 1 !important;
+}
+
+.table th:first-of-type {
+  width: 130px !important;
+}
+
+.table th:nth-of-type(2) {
+  width: 20px;
+}
+
+.table th:last-of-type {
+  width: 1rem;
+}
+
+.table th:nth-last-of-type(2) {
+  width: 4rem;
+}
+
+
+.table th:nth-last-of-type(3) {
+  width: 4rem;
+}
+
+.table th:nth-of-type(6) {
+  width: 3rem;
+}
+
+.table td:nth-of-type(2), .table td:nth-of-type(6), .table td:nth-last-of-type(3) {
+  text-align: center !important;
+}
+
+.table td, .table th {
+  white-space: normal !important;
+}
