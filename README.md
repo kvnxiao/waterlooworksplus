@@ -6,9 +6,9 @@ Quality of life improvements to the WaterlooWorks website.
 
 **The 5 million dollar question:** _why is the WaterlooWorks website so terrible?_
 
-The 0 dollar answer: _Terrible coding practices, hidden form submissions, you name it._
+**The 0 dollar answer:** _Terrible coding practices, hidden form submissions, you name it._
 
-Now, introducing _WaterlooWorks+_, an awesome ~~hack~~ browser extension to improve user experience on the WaterlooWorks website, just ever so slightly better than usual!
+Now, introducing **_WaterlooWorks+_**, an awesome ~~hack~~ browser extension to improve user experience on the WaterlooWorks website, just ever so slightly better than usual!
 
 ### Features
 
