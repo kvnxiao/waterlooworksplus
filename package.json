@@ -25,8 +25,16 @@
   },
   "homepage": "https://github.com/kvnxiao/waterlooworksplus#readme",
   "devDependencies": {
+    "del": "^2.2.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "uglify-save-license": "^0.4.1"
   }
 }

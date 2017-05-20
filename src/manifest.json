@@ -5,21 +5,21 @@
   "version": "1.2.0",
   "author": "Kevin Xiao",
   "icons": {
-    "16": "img/128.png",
-    "48": "img/128.png",
-    "128": "img/128.png"
+    "16": "128.png",
+    "48": "128.png",
+    "128": "128.png"
   },
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
       "matches": ["https://waterlooworks.uwaterloo.ca/**"],
-      "js": ["lib/jquery-3.2.1.min.js", "lib/orbisapp.js", "js/content.js"],
-      "css": ["css/custom.css"]
+      "js": ["bundle.js"],
+      "css": ["custom.css"]
     }
   ],
-  "web_accessible_resources": ["js/injected.js"],
+  "web_accessible_resources": ["injected.js"],
   "permissions": [
     "activeTab",
     "https://waterlooworks.uwaterloo.ca/**"
