@@ -19,7 +19,7 @@
       "css": ["custom.css"]
     }
   ],
-  "web_accessible_resources": ["injected.js"],
+  "web_accessible_resources": ["inject_job_table.js", "inject_message_table.js"],
   "permissions": [
     "activeTab",
     "https://waterlooworks.uwaterloo.ca/**"

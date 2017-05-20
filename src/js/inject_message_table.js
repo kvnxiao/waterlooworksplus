@@ -16,18 +16,21 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Suppress click listeners for job postings
-$('#postingsTable').find('tbody tr td:nth-child(3) a').each(function (_, a) {
-  var currLink = $(a);
-  currLink
-      .attr('onclick-org', currLink.attr('onclick'))
-      .attr('href', '#' + currLink.attr('onclick-org'))
-      .removeAttr('onclick').off('click');
+// Adds clickable subject links for message dashboard table (can be opened in new tab)
+var dashTable = $('#dashboard_userCommonMyMessagesTableID');
+dashTable.find('tbody tr td:nth-child(6)').each(function (_, d) {
+  var td = $(d);
+  var text = td.html();
+  var onclick = td.parent().find('td:first-child a').attr('onclick');
+  var link = $('<a>').attr('href', '#' + onclick).html(text);
+  td.text('').append(link);
 
-  // Load page directly on left click
-  currLink.click(function (event) {
+  link.click(function (event) {
     if (event.which === 1 && !event.ctrlKey) {
-      eval(currLink.attr('onclick-org'));
+      eval(onclick);
     }
   });
 });
+
+// Shorten 'Acknowledgement Required' to 'Ack. Required'
+dashTable.find('thead tr th:nth-child(3) a').text('Ack. Required');

@@ -26,7 +26,7 @@ const del = require('del');
 const keepLicense = { preserveComments: 'license' };
 
 const srcBundle = [ 'src/lib/jquery-3.2.1.min.js', 'src/lib/orbisapp.js', 'src/js/content.js' ];
-const srcJs = [ 'src/js/background.js', 'src/js/injected.js' ];
+const srcJs = [ 'src/js/background.js', 'src/js/inject_job_table.js', 'src/js/inject_message_table.js' ];
 const srcCss = 'src/css/**/*.styl';
 const copyFiles = [ 'src/img/**/*.*', 'src/manifest.json' ];
 const distFolder = 'dist';

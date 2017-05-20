@@ -89,9 +89,42 @@
     &:nth-last-of-type(2)
       width 4rem
     &:nth-last-of-type(3)
-      width 4rem
+      width 3.5rem
     &:nth-of-type(6)
       width 3rem
 
 .table td, .table th
   white-space normal !important
+
+#dashboard_userCommonMyMessages_gridBox
+  max-height none
+
+#dashboard_userCommonMyMessages_topScrollBox
+  display none
+
+#dashboard_userCommonMyMessagesTableID
+  table-layout fixed
+  th, td
+    white-space normal !important
+  td
+    &:first-of-type
+      width 2.25rem !important
+  th
+    &:first-of-type
+      width 2.25rem !important
+    &:nth-of-type(2)
+      width 2.75rem !important
+    &:nth-of-type(3)
+      width 4rem !important
+    &:nth-of-type(4)
+      width 4rem !important
+    &:nth-of-type(6)
+      width 4rem !important
+    &:nth-of-type(7)
+      width 2rem !important
+    &:nth-last-of-type(2)
+      width initial !important
+    &:nth-last-of-type(3)
+      width 3rem !important
+    &:last-of-type
+      width 3rem !important
