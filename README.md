@@ -14,10 +14,11 @@ Now, introducing **_WaterlooWorks+_**, an awesome ~~hack~~ browser extension to 
 
 * Open job posting links in **New Tabs**
 * Improved table formatting for job postings and dashboard messages to prevent need of scrolling horizontally
-* Adds extra pagination to the bottom of job postings page
-* Repositioned "Back Buttons" directly above and to the left of main content for ease of accessibility
-* Adds clickable links to the subject text for the dashboard message table
+* Adds clickable links to the subject text for the dashboard message table (supports new tabs)
 * Shortened some table header names for better visibility
+* Adds extra pagination to the bottom of job postings page
+* "Back to top" anchor at the bottom of job posting pages
+* Repositioned "Back Buttons" directly above and to the left of main content for ease of accessibility
 * Stylish and persistent blue navigation panel to replace the ugly smoke colour
 
 ### Installing
