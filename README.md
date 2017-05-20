@@ -17,7 +17,7 @@ Now, introducing **_WaterlooWorks+_**, an awesome ~~hack~~ browser extension to 
 * Adds extra pagination to the bottom of job postings page
 * Repositioned "Back Buttons" directly above and to the left of main content for ease of accessibility
 * Adds clickable links to the subject text for the dashboard message table
-* Shortened table header names for better visibility
+* Shortened some table header names for better visibility
 * Stylish and persistent blue navigation panel to replace the ugly smoke colour
 
 ### Installing
