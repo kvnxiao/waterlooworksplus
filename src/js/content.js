@@ -28,7 +28,7 @@ function injectJs(script) {
 
 // Scroll to top of page in 300ms
 function scrollTop() {
-  $('body').animate({ scrollTop: 0 }, 300);
+  $('body,html').animate({ scrollTop: 0 }, 300);
 }
 
 // Add paginator to bottom of job postings table
