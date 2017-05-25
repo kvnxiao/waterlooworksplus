@@ -10,7 +10,7 @@ Quality of life improvements to the WaterlooWorks website.
 
 Now, introducing **_WaterlooWorks+_**, an awesome ~~hack~~ browser extension to improve user experience on the WaterlooWorks website, just ever so slightly better than usual!
 
-### Features
+## Features
 
 * Open job posting links in **New Tabs**
 * Improved table formatting for job postings and dashboard messages to prevent need of scrolling horizontally
@@ -29,7 +29,7 @@ If you choose to ignore this warning, please do not complain if you are getting 
 
 Download the extension for Chrome here: https://chrome.google.com/webstore/detail/waterlooworksplus/lodjkiahfkdnlhhhfcckfmhnlpbbpghd
 
-Download the extension for Firefox here: **SOON**
+Download the extension for Firefox here: https://github.com/kvnxiao/waterlooworksplus/releases (download the `.xpi` file from the latest version)
 
 ## License
 
