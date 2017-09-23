@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "WaterlooWorksPlus",
+  "name": "WaterlooWorks Plus",
+  "short_name": "wwplus",
   "description": "The extension for WaterlooWorks you never realized you needed.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "Kevin Xiao",
   "icons": {
     "16": "128.png",
