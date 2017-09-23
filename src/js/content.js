@@ -62,6 +62,10 @@ function updateJobPostings() {
   addScrollTop();
 }
 
+function updateMessages() {
+  injectJs(chrome.extension.getURL('inject_message_table.js'));
+}
+
 // "Default" implementation of new tabs by storing buildForm script in anchor href as hash in url
 var hash = window.location.hash;
 if (hash.startsWith('#orbisApp.buildForm(') && (hash.endsWith(').submit();') || hash.endsWith(').submit()'))) {
@@ -72,19 +76,22 @@ if (hash.startsWith('#orbisApp.buildForm(') && (hash.endsWith(').submit();') || 
 // Mutate page
 relocateButtons();
 
+// Mutation config
+var config = { attributes: false, childList: true, characterData: true, subtree: true };
+
 // Add job posting table modifications only if table exists
 if (document.getElementById('postingsTablePlaceholder')) {
   // Paginator DOM watcher
   var aaaa = document.getElementsByClassName('aaaa');
   if (aaaa.length > 0) {
     var target = aaaa[0];
-    var config = { attributes: false, childList: true, characterData: true, subtree: true };
     var observer = new MutationObserver(function () {
       // Temporarily remove mutation observer
       observer.disconnect();
 
       // Mutate job posting table
       updateJobPostings();
+      console.log(target);
 
       // Re-add mutation observer
       observer.observe(target, config);
@@ -97,5 +104,8 @@ if (document.getElementById('postingsTablePlaceholder')) {
 }
 
 if (document.getElementById('dashboard_userCommonMyMessagesTableID')) {
-  injectJs(chrome.extension.getURL('inject_message_table.js'));
+  var content = document.getElementsByClassName('messages-table-wrapper');
+  if (content.length > 0) {
+    updateMessages();
+  }
 }
