@@ -32,19 +32,14 @@ function scrollTop() {
 }
 
 // Add paginator to bottom of job postings table
-function clonePaginator() {
+function addScrollTop() {
   var postingsTable = $('#postingsTablePlaceholder');
-  var paginator = postingsTable.children('.orbis-posting-actions');
-
-  if (paginator.length < 2) {
-    postingsTable
-        .append(paginator.clone())
-        .append($('<div>').addClass('scroll-top')
-            .append($('<a>', { text: 'Back to top', href: ' ' }).click(function (event) {
-              event.preventDefault();
-              scrollTop();
-            })));
-  }
+  postingsTable
+      .append($('<div>').addClass('scroll-top')
+      .append($('<a>', { text: 'Back to top', href: ' ' }).click(function (event) {
+        event.preventDefault();
+        scrollTop();
+      })));
 }
 
 // For orbis header "Back Buttons"
@@ -64,7 +59,7 @@ function updateJobPostings() {
   postingsTableRow.find('th:nth-child(6)').find('a').text('Openings');
   postingsTableRow.find('th:nth-child(7)').find('a').text('Status');
   postingsTableRow.find('th:nth-child(11)').find('a').text('# of Apps');
-  clonePaginator();
+  addScrollTop();
 }
 
 // "Default" implementation of new tabs by storing buildForm script in anchor href as hash in url

@@ -18,7 +18,7 @@
 
 // Suppress click listeners for job postings and adds tabbing functionality
 var postingsTable = $('#postingsTable');
-postingsTable.find('tbody tr td:nth-child(3) a').each(function (_, a) {
+postingsTable.find('tbody tr td:nth-child(4) a').each(function (_, a) {
   var currLink = $(a);
   currLink
       .attr('onclick-org', currLink.attr('onclick'))
